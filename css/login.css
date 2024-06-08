@@ -93,6 +93,7 @@ body {
   top: 50%;
   transform: translateY(-50%);
   font-size: 20px;
+  /* cursor: pointer; */
 }
 .input-box i {
   position: absolute;
@@ -100,6 +101,7 @@ body {
   top: 50%;
   transform: translateY(-50%);
   font-size: 25px;
+  cursor: pointer;
 }
 .wrapper .remember-forgot {
   display: flex;
@@ -195,4 +197,21 @@ body {
   width: 50px;
   height: 50px;
   margin-left: 20px;
+}
+.form-control {
+  border-radius: 40px;
+}
+.modal-footer #btn {
+  border-radius: 20px;
+}
+.wrapper .btn:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.wrapper .btn:hover {
+  background-color: #7ed626;
+  color: white;
+}
+.modal-header .card .card-body p {
+  font-size: 13px;
 }
