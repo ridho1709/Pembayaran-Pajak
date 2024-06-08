@@ -1,3 +1,14 @@
+<?php
+session_start();
+
+// Periksa apakah pengguna sudah login
+if (!isset($_SESSION['username'])) {
+    // Jika belum, arahkan ke halaman login
+    header("Location: login.php");
+    exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -28,7 +39,7 @@
         Website yang menyediakan berbagai jenis pembayaran pajak hanya dengan 1
         klik
       </p>
-      <a href="profile.html">
+      <a href="create.php">
         <button type="button" class="btn">
           <b>Ayo Bayar Pajak!!</b>
         </button>
@@ -109,7 +120,7 @@
         <a href="#">About</a>
       </nav>
       <div class="navbutton">
-        <a href="logout_proces.php">
+        <a href="proses/logout-proces.php">
           <button type="button" class="btnlogin">Logout</button>
         </a>
       </div>
