@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <title>Dashboard | KlikPajak</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <div class="logo">
+          <h2>Klik<i>|pajak</i></h2>
+        </div>
+        <ul>
+          <li>
+            <a href="#" class="active">Home</a>
+          </li>
+          <li><a href="#">Document</a></li>
+          <li><a href="#">Transaction</a></li>
+          <li><a href="#">Log out</a></li>
+        </ul>
+      </div>
+      <div class="content">
+        <div class="widget">
+          <div class="widget-header">
+            <h2>Pembayaran Pajak</h2>
+          </div>
+          <div class="widget-content">
+            <form id="dataForm">
+              <div class="form-input">
+                <label for="item">Jenis Pajak :</label>
+                <input type="text" id="item" name="item" required />
+              </div>
+              <div class="form-input">
+                <label for="amount">Jumlah Pembayaran (IDR):</label>
+                <input type="number" id="amount" name="amount" required />
+              </div>
+              <div class="form-input">
+                <label for="item">Tanggal Pembayaran :</label>
+                <input type="date" id="item" name="item" required />
+              </div>
+              <div class="form-input">
+                <label for="Metode Pembayaran">Metode Pembayaran:</label>
+                <input type="text" id="item" name="item" required />
+              </div>
+              <div class="form-input">
+                <button type="submit">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="widget" id="displayWidget" style="display: none">
+        <div class="widget-header">
+          <h2>Data Pembayaran Pajak</h2>
+        </div>
+        <div class="widget-content" id="displayContent">
+          Submitted data will be displayed here
+        </div>
+      </div>
+    </div>
+
+    <!-- Displaying Data -->
+    <div class="widget-content">
+      <div class="widget-header">
+        <h2>Data Pembayaran Pajak</h2>
+      </div>
+      <div class="widget-content" id="displayContent">
+        <table class="table-data">
+          <thead>
+            <tr>
+              <th style="width: 20%"><u>Jenis Pajak</u></th>
+              <th style="width: 20%"><u>Jumlah Pembayaran</u></th>
+              <th style="width: 20%"><u>Tanggal Pembayaran</u></th>
+              <th style="width: 20%"><u>Jenis Pembayran</u></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Kendaraan Roda 2</td>
+              <td>Rp 600.000</td>
+              <td>04 / 04 / 2024</td>
+              <td>Debit</td>
+            </tr>
+          </tbody>
+          <tbody>
+            <tr>
+              <td>Rumah</td>
+              <td>Rp 120.000.000</td>
+              <td>19 / 04 / 2021</td>
+              <td>Debit</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>

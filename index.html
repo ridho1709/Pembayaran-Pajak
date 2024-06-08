@@ -3,47 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Beranda</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Home | KlikPajak</title>
   </head>
   <body>
-    <center>
-      <header>
-        <nav>
-          <div class="logo">
-            <img src="assets/Logo.png" alt="" />
-          </div>
-          <a href="login.html">login</a>
-          <a href="#">Profil</a>
-          <a href="index.html">Beranda</a>
-          <a href="#">Jenis Pajak</a>
-          <a href="#">About</a>
-        </nav>
-      </header>
-      <main>
-        <h1>Klik Pajak</h1>
-        <h3>Platform Pembayaran pajak</h3>
-        <p>
-          Website yang menyediakan berbagai jenis pembayaran pajak hanya dengan
-          1 klik
-        </p>
-        <button type="button">Ayo Bayar Pajak</button>
-        <div class="cards"></div>
-        <div class="card">
-          <img src="assets/OJK_Logo.png" alt="" />
-          <div class="card">
-            <img src="assets/logo bank BCA.jpg" alt="" />
-            <div class="card">
-              <img src="assets/Bank Mandiri Logo.jpg" alt="" />
-              <div class="card">
-                <img src="assets/BRI Logo.jpg" alt="" />
-                <div class="card">
-                  <img src="assets/Dana Logo.jpg" alt="" />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </main>
-    </center>
+    <img src="assets/Logo.png" class="picture" />
+    <div class="content">
+      <h1>Website Pembayaran Pajak</h1>
+      <p>
+        Website yang menyediakan berbagai jenis pembayaran pajak hanya dengan 1
+        klik
+      </p>
+      <a href="profile.html">
+        <button type="button" class="btn">
+          <b>Ayo Bayar Pajak!!</b>
+        </button>
+      </a>
+    </div>
+
+    <header class="header">
+      <h2>Klik<i>|Pajak</i></h2>
+      <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="profile.html">Profile</a>
+        <a href="#">Product</a>
+        <a href="#">Contact</a>
+        <a href="#">About</a>
+      </nav>
+      <div class="navbutton">
+        <a href="login.html">
+          <button type="button" class="btnlogin">Login</button>
+        </a>
+      </div>
+      <div class="menu">
+        <i class="bx bx-menu"></i>
+      </div>
+    </header>
   </body>
 </html>
