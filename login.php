@@ -22,12 +22,14 @@
   </head>
   <body>
     <div class="wrapper">
-      <form action="">
+      <form action="login_proces.php" method="post">
         <h1><u>LOGIN</u></h1>
         <div class="input-box1">
           <input
             type="text"
             placeholder="Masukan Nomor Induk NIK/NPWP"
+            name="username"
+            id="username"
             required
           />
           <i class="bx bxs-user"></i>
@@ -36,18 +38,21 @@
           <input
             type="password"
             placeholder="Masukan Kata Sandi"
+            name="password"
             id="password"
             required
           />
-          <i class="bx bx-show-alt" id="show"></i>
+
           <span class="toggle-show" onclick="togglePasswordVisibility()">
             <i class="bx bx-hide"></i
           ></span>
         </div>
         <div class="remember-forgot">
-          <a href="forgot.html">Lupa Kata Sandi ?</a>
+          <a href="forgot.php">Lupa Kata Sandi ?</a>
         </div>
-        <button type="submit" class="btn">Login</button>
+        <button type="submit" name="login" class="btn">Login</button>
+
+        <!-- Register -->
         <div class="register-link">
           <p>
             Pengguna Baru?
@@ -67,9 +72,9 @@
       arialabelledby="modalLabel"
       aria-hidden="true"
     >
-      <div class="modal-dialog " role="document">
+      <div class="modal-dialog" role="document">
         <div class="modal-content">
-          <div class="modal-header" >
+          <div class="modal-header">
             <h5>Register</h5>
             <button
               type="button"
@@ -84,21 +89,21 @@
             <div class="card">
               <div class="card-body">
                 <p>
-              1. Nomor Pokok Wajib Pajak (NPWP) yang dimasukkan hanya angka,
-              tanpa tanda titik (.) dan strip (-).
-            </p>
-              <p>
-              2. Dapatkan EFIN (Electronic Filing Identification Number) di
-              Kantor Pelayanan Pajak (KPP) terdekat bagi Wajib Pajak Orang
-              Pribadi atau di KPP terdaftar bagi Wajib Pajak Badan.
-            </p><p>
-              3. Untuk melakukan registrasi akun masukkan NPWP, EFIN, dan Kode
-              Keamanan dengan benar, kemudian klik tombol Submit untuk ke tahap
-              selanjutnya.
-            </p>
+                  1. Nomor Pokok Wajib Pajak (NPWP) yang dimasukkan hanya angka,
+                  tanpa tanda titik (.) dan strip (-).
+                </p>
+                <p>
+                  2. Dapatkan EFIN (Electronic Filing Identification Number) di
+                  Kantor Pelayanan Pajak (KPP) terdekat bagi Wajib Pajak Orang
+                  Pribadi atau di KPP terdaftar bagi Wajib Pajak Badan.
+                </p>
+                <p>
+                  3. Untuk melakukan registrasi akun masukkan NPWP, EFIN, dan
+                  Kode Keamanan dengan benar, kemudian klik tombol Submit untuk
+                  ke tahap selanjutnya.
+                </p>
               </div>
             </div>
-            
           </div>
           <div class="modal-body">
             <form>
@@ -111,7 +116,6 @@
                   aria-describedby="emailHelp"
                   placeholder="Masukan Email"
                 />
-                
               </div>
               <div class="form-group">
                 <!-- <label for="exampleInputPassword1">Password</label> -->
@@ -130,7 +134,6 @@
                   id="exampleInputPassword1"
                   placeholder="Masukan Nomor EIFN Anda"
                 />
-
               </div>
               <div class="form-group form-check">
                 <input
@@ -139,12 +142,17 @@
                   id="exampleCheck1"
                 />
                 <label class="form-check-label" for="exampleCheck1"
-                  >Check me out</label>
+                  >Check me out</label
+                >
               </div>
             </form>
             <div class="modal-footer">
-              <button type="submit" id="btn" class="btn btn-success">Submit</button>
-              <button type="submit" id="btn" class="btn btn-danger">Close</button>
+              <button type="submit" id="btn" class="btn btn-success">
+                Submit
+              </button>
+              <button type="submit" id="btn" class="btn btn-danger">
+                Close
+              </button>
             </div>
           </div>
         </div>
@@ -154,7 +162,7 @@
     <header class="header">
       <h2>Klik<i>|Pajak</i></h2>
       <nav class="navbar">
-        <a href="index.html">Home</a>
+        <a href="index.php">Home</a>
         <a href="#">Profile</a>
         <a href="#">Product</a>
         <a href="#">Contact</a>

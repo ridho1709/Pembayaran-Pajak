@@ -94,7 +94,7 @@
               Tahunan hingga batas akhir 31 Maret 2024. Batas akhir pelaporan
               itu untuk wajib pajak orang pribadi.
             </p>
-            <a href="dashboard.html">Read More</a>
+            <a href="dashboard.php">Read More</a>
           </div>
         </div>
       </div>
@@ -102,15 +102,15 @@
     <header class="header">
       <h2>Klik<i>|Pajak</i></h2>
       <nav class="navbar">
-        <a href="index.html">Home</a>
-        <a href="profile.html">Profile</a>
+        <a href="index.php">Home</a>
+        <a href="profile.php">Profile</a>
         <a href="#">Product</a>
         <a href="#">Contact</a>
         <a href="#">About</a>
       </nav>
       <div class="navbutton">
-        <a href="login.html">
-          <button type="button" class="btnlogin">Login</button>
+        <a href="logout_proces.php">
+          <button type="button" class="btnlogin">Logout</button>
         </a>
       </div>
       <div class="menu">
@@ -121,4 +121,3 @@
     <script src="js/swipper.js"></script>
   </body>
 </html>
-
