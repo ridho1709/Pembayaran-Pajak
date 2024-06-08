@@ -47,9 +47,13 @@
           <input
             type="password"
             placeholder="Masukan Nomor EIFN Anda"
+            id="password"
             required
           />
-          <i class="bx bxs-lock-alt"></i>
+          <i class="bx bx-show-alt" id="show"></i>
+          <span class="toggle-show" onclick="togglePasswordVisibility()">
+            <i class="bx bx-hide"></i
+          ></span>
         </div>
 
         <button type="submit" class="btn">Submit</button>
@@ -71,5 +75,7 @@
         </a>
       </div>
     </header>
+    <script src="js/main.js"></script>
   </body>
 </html>
+
